@@ -8,12 +8,14 @@
 
 Auto miaAuto;
 
-miaAuto = new Auto();
+miaAuto = new Auto("Ferrari", "Purosangue", "rosso", Auto.motore.elettrico);
 
-miaAuto.marca = "ferrari";
-miaAuto.modello = "purosangue";
-miaAuto.colore = "rosso";
-miaAuto.tipoMotore = Auto.motore.benzina;
+
+
+//miaAuto.marca = "ferrari";
+//miaAuto.modello = "purosangue";
+//miaAuto.colore = "rosso";
+//miaAuto.tipoMotore = Auto.motore.benzina;
 
 miaAuto.StampaDescrizione();
 
@@ -30,14 +32,25 @@ class Auto{
     }
 
     // Proprietà
+    /// <summary>
+    /// Marca del veicolo
+    /// </summary>
     public string? marca;
     public string? modello;
     public string? colore;
     public motore tipoMotore;
 
+    //costruttore
     public Auto()
     {
     }
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="marca">Marca del veicolo (es;fiat)</param>
+    /// <param name="modello">Modello del veicolo (es:panda)</param>
+    /// <param name="colore">Colore del veicolo</param>
+    /// <param name="tipoMotore">Motore del veicolo(es:benzina,diesel,elettrica)</param>
 
     public Auto(string? marca, string? modello, string? colore, motore tipoMotore)
     {
