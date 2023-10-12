@@ -8,7 +8,9 @@ namespace prima_app
 {
     class Auto
     {
+        #region " tipi "
         // Tipi personalizzati
+    
 
         public enum motore
         {
@@ -16,6 +18,8 @@ namespace prima_app
             diesel,
             elettrico
         }
+
+        #endregion
 
         // Proprietà
         /// <summary>
