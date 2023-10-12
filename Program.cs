@@ -15,7 +15,7 @@ miaAuto.modello = "purosangue";
 miaAuto.colore = "rosso";
 miaAuto.tipoMotore = Auto.motore.benzina;
 
-miaAuto.stampa();
+miaAuto.StampaDescrizione();
 
 Console.ReadLine();
 
@@ -47,12 +47,22 @@ class Auto{
         this.tipoMotore = tipoMotore;
     }
 
-    public void stampa(){
-        // stampo le caratteristiche dell'auto
-        Console.WriteLine("marca: "+ this.marca);
-        Console.WriteLine("modello: "+ this.modello);
-        Console.WriteLine("motore: "+ this.tipoMotore);
-        Console.WriteLine("colore: "+ this.colore);
+    public void StampaDescrizione()
+    {
+        //stampo le caratteristiche dell'auto
+        Console.WriteLine(generaDescrizione());
+    }
+
+    private string generaDescrizione(){
+
+        string result;
+
+        result = "marca:" + this.marca + "\n";
+        result += $"modello: {this.modello} \n";
+        result += $"motore:  {this.tipoMotore}\n";
+        result += "colore:" + this.colore;
+
+        return result;
 
     }
 
