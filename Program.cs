@@ -10,14 +10,13 @@
 // 1)Accendi
 // 2)Spegni
 // 3)Rifornisci
-// 0)Esci
+// 0)Esci 
 
-using System.Runtime.CompilerServices;
 using prima_app;
 
 AutoInterattiva miaAuto;
 
-miaAuto = new AutoInterattiva("Ferrari", "Purosangue", "rosso", Auto.motore.elettrico, 0);
+miaAuto = new AutoInterattiva("Ferrari", "Purosangue", "rosso", Auto.motore.elettrico, 50, 90);
 
 miaAuto.stampaStato();
 

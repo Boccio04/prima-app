@@ -30,8 +30,9 @@ namespace prima_app
         public string? colore;
         public motore tipoMotore;
 
-        public int livelloCarburante;
+        private int livelloCarburante;
         private bool accesa;
+        private int livelloMaxCarburante;
         
 
         //costruttore
@@ -39,13 +40,14 @@ namespace prima_app
         {
         }
 
-        public Auto(string? marca, string? modello, string? colore, motore tipoMotore, int livelloCarburante)
+        public Auto(string? marca, string? modello, string? colore, motore tipoMotore, int livelloCarburante, int livelloMaxCarburante)
         {
             this.marca = marca;
             this.modello = modello;
             this.colore = colore;
             this.tipoMotore = tipoMotore;
             this.livelloCarburante = livelloCarburante;
+            this.livelloMaxCarburante = livelloMaxCarburante;
         }
 
         /// <summary>
@@ -175,14 +177,34 @@ namespace prima_app
         }
 
         /// <summary>
-        /// Spegne il veicolo
+        /// Agginge carburante all'auto
         /// </summary>
-
+        /// <param name="carburante"></param>
         public void spegni()
         {
             this.accesa = false;
             // spegne il veicolo
 
+        }
+
+        public void Rifornisci(int carburante)
+        {
+            //se ilalore è positivo, lo aggiungo
+            if (carburante > 0)
+            {
+                this.livelloCarburante += carburante;
+                Console.WriteLine(carburante);
+                if (carburante > 0)
+                {
+                    this.livelloCarburante += carburante;
+                    Console.WriteLine(livelloCarburante);
+                }
+
+                if (this.livelloCarburante > this.livelloMaxCarburante)
+                {
+                    this.livelloCarburante = this.livelloMaxCarburante;
+                }
+            }
         }
 
     }

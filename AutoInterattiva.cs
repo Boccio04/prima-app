@@ -10,11 +10,13 @@ namespace prima_app
     {
         public AutoInterattiva()
         {
+
         }
 
-        public AutoInterattiva(string? marca, string? modello, string? colore, motore tipoMotore, int livelloCarburante) : base(marca, modello, colore, tipoMotore, livelloCarburante)
+        public AutoInterattiva(string? marca, string? modello, string? colore, motore tipoMotore, int livelloCarburante, int livelloMaxCarburante) : base(marca, modello, colore, tipoMotore, livelloCarburante, livelloMaxCarburante)
         {
         }
+
         public void StampaMenu()
         {
             string Comando;
@@ -37,6 +39,7 @@ namespace prima_app
                         this.stampaStato();
                         break;
                     case "3":
+                        this.Rifornisci(10);
                         this.stampaStato();
                         break;
                     case "0":
@@ -50,9 +53,9 @@ namespace prima_app
 
         private void Menu()
         {
-            Console.WriteLine("1");
-            Console.WriteLine("2");
-            Console.WriteLine("3");
+            Console.WriteLine("Accendi");
+            Console.WriteLine("Spegni");
+            Console.WriteLine("Rifornisci");
             Console.WriteLine("0");
 
 
