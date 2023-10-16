@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "prima-app", "prima-app\prima-app.csproj", "{146FFA26-7B58-4FC3-893E-83DF13FBEE47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAuto", "TestAuto\TestAuto.csproj", "{24CCBED1-A95D-4831-ADAF-19476DB4738D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{146FFA26-7B58-4FC3-893E-83DF13FBEE47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146FFA26-7B58-4FC3-893E-83DF13FBEE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146FFA26-7B58-4FC3-893E-83DF13FBEE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146FFA26-7B58-4FC3-893E-83DF13FBEE47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CCBED1-A95D-4831-ADAF-19476DB4738D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CCBED1-A95D-4831-ADAF-19476DB4738D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CCBED1-A95D-4831-ADAF-19476DB4738D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CCBED1-A95D-4831-ADAF-19476DB4738D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE5CB602-11E9-47C8-B33F-DE8407B305D6}
+	EndGlobalSection
+EndGlobal
