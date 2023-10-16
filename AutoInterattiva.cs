@@ -39,7 +39,7 @@ namespace prima_app
                         this.stampaStato();
                         break;
                     case "3":
-                        this.Rifornisci(10);
+                        this.Rifornisci(this.ChiediCarburante());
                         this.stampaStato();
                         break;
                     case "0":
@@ -51,8 +51,25 @@ namespace prima_app
             } while (Comando != "0");
         }
 
+        /// <summary>
+        /// Chiede all'utente quant immettere nel serbatoi
+        /// </summary>
+        /// 
+        private int ChiediCarburante()
+        {
+            int result;
+
+            Console.WriteLine("Quanto carburante vuoi aggiungere?");
+
+            result = Int32.Parse(Console.ReadLine());
+
+            return result;
+        }
+
+
         private void Menu()
         {
+            Console.WriteLine("Seleziona un comando");
             Console.WriteLine("Accendi");
             Console.WriteLine("Spegni");
             Console.WriteLine("Rifornisci");

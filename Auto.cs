@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace prima_app
 {
-    class Auto
+    public class Auto
     {
         #region " tipi "
         // Tipi personalizzati
@@ -36,8 +36,9 @@ namespace prima_app
         
 
         //costruttore
-        public Auto()
+        public Auto():this("Ferrari", "Purosangue", "rosso", Auto.motore.elettrico, 50, 90)
         {
+            
         }
 
         public Auto(string? marca, string? modello, string? colore, motore tipoMotore, int livelloCarburante, int livelloMaxCarburante)
@@ -194,11 +195,6 @@ namespace prima_app
             {
                 this.livelloCarburante += carburante;
                 Console.WriteLine(carburante);
-                if (carburante > 0)
-                {
-                    this.livelloCarburante += carburante;
-                    Console.WriteLine(livelloCarburante);
-                }
 
                 if (this.livelloCarburante > this.livelloMaxCarburante)
                 {
