@@ -6,24 +6,22 @@
 // All'avvio dell'app deve mostrare lo stato dell'auto, stampando marca, modello, colore e tipo di motore
 // Per modellare l'automobile implementiamo una classe chiamata auto
 
+// Aggiungi al'applicazione un menu che consenta all'utente di selezionare l'operazione da fare, il menu deve prevedere le seguenti voci:
+// 1)Accendi
+// 2)Spegni
+// 3)Rifornisci
+// 0)Esci
+
 using System.Runtime.CompilerServices;
 using prima_app;
 
-Auto miaAuto;
+AutoInterattiva miaAuto;
 
-miaAuto = new Auto("Ferrari", "Purosangue", "rosso", Auto.motore.elettrico, 0);
+miaAuto = new AutoInterattiva("Ferrari", "Purosangue", "rosso", Auto.motore.elettrico, 0);
 
-
-
-miaAuto.StampaDescrizione();
 miaAuto.stampaStato();
 
-
-miaAuto.accendi();
-miaAuto.stampaStato();
-
-miaAuto.spegni();
-miaAuto.stampaStato();
+miaAuto.StampaMenu();
 
 Console.ReadLine();
 

@@ -10,7 +10,7 @@ namespace prima_app
     {
         #region " tipi "
         // Tipi personalizzati
-    
+
 
         public enum motore
         {
@@ -32,6 +32,7 @@ namespace prima_app
 
         public int livelloCarburante;
         private bool accesa;
+        
 
         //costruttore
         public Auto()
@@ -50,6 +51,47 @@ namespace prima_app
         /// <summary>
         /// Stampa la descrizione del veicolo
         /// </summary>
+        /// 
+        /*public void StampaMenu()
+        {
+            string Comando;
+
+            do {
+
+                this.Menu();
+
+                Comando = Console.ReadLine();
+
+                switch (Comando)
+                {
+                    case "1":
+                        this.accendi();
+                        this.stampaStato();
+                        break;
+                    case "2":
+                        this.spegni();
+                        this.stampaStato();
+                        break;
+                    case "3":
+                        this.stampaStato();
+                        break;
+                    case "0":
+                        break;
+                    default:
+                        break;
+                }
+
+            } while (Comando != "0");
+        }
+
+        private void Menu() {
+            Console.WriteLine("Seleziona un comando");
+            Console.WriteLine("Seleziona un comando");
+            Console.WriteLine("Seleziona un comando");
+            Console.WriteLine("Seleziona un comando");
+
+
+        }*/
         public void StampaDescrizione()
         {
             //stampo le caratteristiche dell'auto
@@ -142,7 +184,6 @@ namespace prima_app
             // spegne il veicolo
 
         }
-
 
     }
 
